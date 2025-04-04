@@ -1,0 +1,9 @@
+SELECT 
+    cod_usuario,
+    SUM(valor_compra) AS total_vendas
+FROM 
+    vendas
+GROUP BY 
+    cod_usuario
+ORDER BY 
+    total_vendas DESC;

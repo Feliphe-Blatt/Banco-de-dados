@@ -1,0 +1,4 @@
+SELECT DISTINCT u.cod_usuario, u.data_cadastro, u.faixa_etaria, u.estado, u.cidade
+FROM usuarios u
+JOIN vendas v ON u.cod_usuario = v.cod_usuario
+WHERE v.forma_pagamento = 'pix';
